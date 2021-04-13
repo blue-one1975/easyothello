@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>OTHELLO GAME</title>
+</head>
+
+<body>
+  <div class="grid" id="grid">
+    <table id="board"></table>
+    <div class="black-status-display" class="now-turn" id="black-turn-display">
+      <p>black</p>
+      <div class="now-black-pieces" id="now-black-pieces">2</div>
+      <button class="pass-button" id="black-pass-button">PASS</button>
+    </div>
+    <div class="white-status-display" class="not-now-turn" id="white-turn-display">
+      <p>white</p>
+      <div class="now-white-pieces" id="now-white-pieces">2</div>
+      <button class="pass-button" id="white-pass-button">PASS</button>
+    </div>
+    <button id="change-cpu-mode-button">CPU: ON</button>
+    <button id="display-can-put-position-button">Spot To Put：<br>HIDE</button>
+    <div class="button-wrapper">
+      <button id="next-game-button" class="next-game-button">NEXTGAME</button>
+    </div>
+  </div>
+
+  <button id="start-game-button"><span>Game Start</span></button>
+
+  <script src="app.js"></script>
+  <script src=index.js></script>
+</body>
+
+</html>
